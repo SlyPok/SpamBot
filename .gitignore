@@ -1,104 +1,48 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
+#discord bot made by spud
+#spud - youtube
+#@Spud1425 - discord
+ 
+##IMPORTS##
+import discord                      #MAKE SURE YOU DO "py -m pip install discord" IN COMMAND PROMPT!
+from discord.ext.commands import bot
+from discord.ext import commands
+import random
+import asyncio
+import time
+ 
+##PREFIX##
+bot = commands.Bot(command_prefix='!')
+ 
+##BOT IS READY##
+@bot.event
+async def on_ready():
+    print("Bot Is Online! And Ready To Spam")
+ 
+##SPAM COMMAND##
+@bot.command(pass_context=True)
+async def spam(ctx): #run "!spam" to run the command
+    while True:
+        await bot.say("@Wissam#0991\n@Wissam#0991\n@Wissam#0991\n@Wissam#0991\n") #NOTE - you need the \n (new lines)
+        await bot.say("@Wissam#0991\n@Wissam#0991\n@Wissam#0991\n@Wissam#0991\n")
+        await bot.say("@Wissam#0991\n@Wissam#0991\n@Wissam#0991\n@Wissam#0991\n")
+        await bot.say("@Wissam#0991\n@Wissam#0991\n@Wissam#0991\n@Wissam#0991\n")
+        await bot.say("@Wissam#0991\n@Wissam#0991\n@Wissam#0991\n@Wissam#0991\n")
+        await bot.say("@Wissam#0991\n@Wissam#0991\n@Wissam#0991\n@Wissam#0991\n")
+        await bot.say("@Wissam#0991\n@Wissam#0991\n@Wissam#0991\n@Wissam#0991\n")
+        await bot.say("@Wissam#0991\n@Wissam#0991\n@Wissam#0991\n@Wissam#0991\n")
+        await bot.say("@Wissam#0991\n@Wissam#0991\n@Wissam#0991\n@Wissam#0991\n")
+        await bot.say("@Wissam#0991\n@Wissam#0991\n@Wissam#0991\n@Wissam#0991\n")
+        await bot.say("@Wissam#0991\n@Wissam#0991\n@Wissam#0991\n@Wissam#0991\n")
+        await bot.say("@Wissam#0991\n@Wissam#0991\n@Wissam#0991\n@Wissam#0991\n")
+        await bot.say("@Wissam#0991\n@Wissam#0991\n@Wissam#0991\n@Wissam#0991\n")
+        await bot.say("@Wissam#0991\n@Wissam#0991\n@Wissam#0991\n@Wissam#0991\n")
+        await bot.say("@Wissam#0991\n@Wissam#0991\n@Wissam#0991\n@Wissam#0991\n")
+        await bot.say("@Wissam#0991\n@Wissam#0991\n@Wissam#0991\n@Wissam#0991\n")
+        await bot.say("@Wissam#0991\n@Wissam#0991\n@Wissam#0991\n@Wissam#0991\n")
+        await bot.say("@Wissam#0991\n@Wissam#0991\n@Wissam#0991\n@Wissam#0991\n")
+        await bot.say("@Wissam#0991\n@Wissam#0991\n@Wissam#0991\n@Wissam#0991\n")
+    
+ 
+##BOT TOKEN##
+bot.run ("NTI5NzM4NTgyMzYyMDMwMDkw.Dw1NjA.a4Ri_rUdejlluAfqdtggnbESXR4")
 
-# C extensions
-*.so
-
-# Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
-
-# PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
-*.manifest
-*.spec
-
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-.hypothesis/
-.pytest_cache/
-
-# Translations
-*.mo
-*.pot
-
-# Django stuff:
-*.log
-local_settings.py
-db.sqlite3
-
-# Flask stuff:
-instance/
-.webassets-cache
-
-# Scrapy stuff:
-.scrapy
-
-# Sphinx documentation
-docs/_build/
-
-# PyBuilder
-target/
-
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# pyenv
-.python-version
-
-# celery beat schedule file
-celerybeat-schedule
-
-# SageMath parsed files
-*.sage.py
-
-# Environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-
-# Spyder project settings
-.spyderproject
-.spyproject
-
-# Rope project settings
-.ropeproject
-
-# mkdocs documentation
-/site
-
-# mypy
-.mypy_cache/
